@@ -16,7 +16,7 @@ const LandingPage = () => {
     <div className="flex relative items-center justify-center w-full h-[80vh]">
       <div className="text-white font-sans max-w-screen-xl -mt-20 px-6 mx-auto w-full">
         <div className="absolute -z-10 top-1/2 left-[45%] -translate-y-1/2">
-          <img className="max-w-xl opacity-90" src="./assets/logo.png" alt="Logo" />
+          <img className="max-w-xl opacity-90" src="/assets/logo.png" alt="Logo" />
         </div>
 
         <div className="relative ml-28">

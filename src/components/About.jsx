@@ -63,19 +63,19 @@ const About = ({ showAbout }) => {
                 </h1>
                 <div className="flex gap-6 mt-4">
                   <div className="flex flex-col items-center">
-                    <img className="w-11" src="./assets/mongodb.svg" alt="" />
+                    <img className="w-11" src="/assets/mongodb.svg" alt="" />
                     <h1 className="text-[#47A248] text-lg font-bold mt-2">M</h1>
                   </div>
                   <div className="flex flex-col items-center">
-                    <img className="w-11" src="./assets/express.svg" alt="" />
+                    <img className="w-11" src="/assets/express.svg" alt="" />
                     <h1 className="text-white text-lg font-bold mt-2">E</h1>
                   </div>
                   <div className="flex flex-col items-center">
-                    <img className="w-11" src="./assets/react.svg" alt="" />
+                    <img className="w-11" src="/assets/react.svg" alt="" />
                     <h1 className="text-[#61DAFB] text-lg font-bold mt-2">R</h1>
                   </div>
                   <div className="flex flex-col items-center">
-                    <img className="w-11" src="./assets/node.svg" alt="" />
+                    <img className="w-11" src="/assets/node.svg" alt="" />
                     <h1 className="text-[#8CC84B] text-lg font-bold mt-2">N</h1>
                   </div>
                 </div>

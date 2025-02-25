@@ -9,14 +9,14 @@ const ProjContainer = () => {
       title: "React Basics",
       description: "Learn the basics of React.js including components and hooks.",
       languages: ["JavaScript", "React"],
-      image: "./assets/netflix.png",
+      image: "/assets/netflix.png",
     },
     {
       title: "Advanced Node.js",
       description: "Deep dive into Node.js, Express, and database integrations.",
       tags: ["Backend", "API"],
       languages: ["Node.js", "Express", "MongoDB"],
-      image: "./assets/macbook 8.png",
+      image: "/assets/macbook 8.png",
     },
   ];
   
@@ -53,7 +53,7 @@ const ProjContainer = () => {
         >
           Rohan Sawant © 2025
         </h1>
-        <img className="w-12" src="./assets/logo.png" alt="" />
+        <img className="w-12" src="/assets/logo.png" alt="" />
 
         <ul className="flex text-white space-x-8">
           {/*top-1/2 transform -translate-y-1/2*/}

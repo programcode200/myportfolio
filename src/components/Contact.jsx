@@ -16,7 +16,7 @@ const Contact = () => {
           <div className="w-full md:w-1/2 flex items-center">
             <img
               className="w-full h-96 object-cover opacity-90"
-              src="./assets/contact.svg"
+              src="/assets/contact.svg"
               alt="Contact"
             />
           </div>
