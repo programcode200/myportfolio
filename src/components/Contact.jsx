@@ -25,15 +25,15 @@ const Contact = () => {
           <section className="w-full md:w-1/2 flex items-center">
             <div className="py-4 lg:pt-16 px-4 mx-auto w-full">
               <form 
-                name="contact v1" 
+                name="contact" 
                 method="post" 
                 data-netlify="true"
                 // data-netlify-honeypot="bot-field"
-                onSubmit="submit"
+                onSubmit={(e) => e.preventDefault()}
                 className="space-y-8"
               >
                 {/* Hidden Input for Netlify */}
-                <input type="hidden" name="form-name" value="contact v1" />
+                <input type="hidden" name="form-name" value="contact" />
                 
                 <div>
                   <label
