@@ -26,10 +26,10 @@ const Contact = () => {
             <div className="py-4 lg:pt-16 px-4 mx-auto w-full">
               <form 
                 name="contact" 
-                method="post" 
+                method="POST" 
                 data-netlify="true"
                 // data-netlify-honeypot="bot-field"
-                onSubmit={(e) => e.preventDefault()}
+                onSubmit={() => alert("Form submitted! Check Netlify dashboard.")}
                 className="space-y-8"
               >
                 {/* Hidden Input for Netlify */}
