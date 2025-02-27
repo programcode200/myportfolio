@@ -33,7 +33,7 @@ const Contact = () => {
                 className="space-y-8"
               >
                 {/* Hidden Input for Netlify */}
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" value="contact v1" />
                 
                 <div>
                   <label
