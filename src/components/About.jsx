@@ -23,7 +23,7 @@ const About = ({ showAbout }) => {
   ];
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
       <div className="bg-[#191919] px-12 py-5 rounded-lg shadow-lg max-w-5xl w-full relative">
         <button
           onClick={showAbout}
