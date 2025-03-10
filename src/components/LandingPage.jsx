@@ -198,7 +198,9 @@ const LandingPage = () => {
             </svg>
           </button>
 
-          <button className="relative group px-5 py-2 bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] rounded-md font-medium transition-transform duration-500 ease-in-out hover:scale-110">
+          <button
+          onClick={() => window.open("https://drive.google.com/file/d/1q0O8qyzRNiVeikmYCzQdTyKHkkCkZ62n/view?usp=drive_link", "_blank")} 
+          className="relative group px-5 py-2 bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] rounded-md font-medium transition-transform duration-500 ease-in-out hover:scale-110">
             Resume
             <svg
               xmlns="http://www.w3.org/2000/svg"
