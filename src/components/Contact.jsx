@@ -9,12 +9,12 @@ const Contact = () => {
 
 
   return (
-    <div className="max-w-screen-2xl w-full mx-auto mt-16 rounded-md border-t border-[#2a88a8] relative bg-gradient-to-br from-black via-gray-900 to-gray-800">
+    <div className="max-w-screen-2xl w-full mx-auto mt-16 rounded-md relative">
       <div className="relative z-10">
         <div className="flex justify-center items-center">
           <h1
             style={{ fontFamily: "Poppins" }}
-            className="text-4xl text-center mx-auto font-semibold text-white border-2 border-[#1788AE] border-t-0 rounded-lg rounded-t-none py-3 px-4 "
+            className="text-4xl text-center mx-auto font-semibold text-white border-2 border-[#1788AE] rounded-lg py-3 px-4 "
           >
             Let's Connect
           </h1>
@@ -25,14 +25,14 @@ const Contact = () => {
           <div className="w-full md:w-1/2 flex items-center">
             <img
               className="w-full h-96 object-cover opacity-90"
-              src="/assets/contact.svg"
+              src="/assets/coder.svg"
               alt="Contact"
             />
           </div>
 
           {/* Left - Contact Form */}
           <section className="w-full md:w-1/2 flex items-center">
-            <div className="py-4 lg:pt-16 px-4 mx-auto w-full">
+            <div className="py-4 lg:pt-2 px-4 mx-auto w-full">
               <form
                 name="contact"
                 method="POST"

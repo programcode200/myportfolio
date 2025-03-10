@@ -1,4 +1,4 @@
-const Card = ({ title, description, languages, image, index }) => {
+const Card = ({ title, description, languages, url, image, index, textcolor }) => {
   return (
     <>
       <div className="mx-8 my-5 border-b border-gray-600">
@@ -9,7 +9,7 @@ const Card = ({ title, description, languages, image, index }) => {
           }`}
         >
           <div className="w-6/12 py-3">
-            <a href="">
+            <a href={url}>
               <img
                 className="max-w-[400px] ml-20 hover:scale-110 duration-300 drop-shadow-[0_0px_40px_rgba(59,130,246,0.5)]"
                 src={image}
@@ -20,8 +20,9 @@ const Card = ({ title, description, languages, image, index }) => {
 
           <div className="w-6/12 ml-28 mr-4 my-auto">
             <h3
-              style={{ fontFamily: "Nunito, sans-serif" }}
-              className="text-3xl font-bold text-[#ca9d71]"
+              style={{ fontFamily: "Nunito, sans-serif", color: textcolor }} 
+              className="text-3xl font-bold"
+
             >
               {title}
             </h3>

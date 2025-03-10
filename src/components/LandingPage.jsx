@@ -1,5 +1,6 @@
 import { useState } from "react";
 import About from "./About";
+import { motion } from "framer-motion";
 
 const LandingPage = () => {
   const [showAbout, setShowAbout] = useState(false);
@@ -14,12 +15,15 @@ const LandingPage = () => {
 
   return (
     <div className="flex relative items-center justify-center w-full h-[80vh]">
+
+      
       <div className="text-white font-sans max-w-screen-xl -mt-20 px-6 mx-auto w-full">
+        
         <div className="absolute -z-10 top-1/2 left-[45%] -translate-y-1/2">
           <img className="max-w-xl opacity-90" src="/assets/logo.png" alt="Logo" />
         </div>
 
-        <div className="relative ml-28">
+        {/* <div className="relative ml-28">
           <h1 className="text-6xl font-bold mb-1">Hi There,</h1>
           <h1 className="text-7xl font-bold">
             I'm{" "}
@@ -117,15 +121,119 @@ const LandingPage = () => {
               </svg>
             </button>
           </div>
+        </div> */}
+
+
+        <div className="relative ml-28">
+        {/* Animating Text Only */}
+        <motion.h1
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-6xl font-bold mb-1"
+        >
+          Hey There,
+        </motion.h1>
+
+        <motion.h1
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          className="text-7xl font-bold"
+        >
+          I'm{" "}
+          <span className="bg-white bg-gradient-to-b from-[#14B8A6] via-[#1595B6] to-[#1F2667] bg-clip-text text-transparent">
+            Rohan Sawant
+          </span>
+        </motion.h1>
+
+        <motion.h1
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+          style={{ fontFamily: "Space Grotesk" }}
+          className="text-2xl font-medium font-sans mt-5"
+        >
+          Fullstack Web Developer
+        </motion.h1>
+
+        {/* Animating Paragraph */}
+        <motion.p
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.2, ease: "easeOut", delay: 0.9 }}
+          className="max-w-2xl my-5 text-[#c7c7c7]"
+        >
+          I create websites and applications that not only look fantastic but
+          also function seamlessly. Whether it's developing innovative apps or
+          diving into the latest web technologies, I'm all in. Let's connect and
+          turn your ideas into digital reality!
+        </motion.p>
+
+        {/* Buttons (Static) */}
+        <div className="flex mt-8 gap-14">
+          <button
+            onClick={handleAbout}
+            className="group relative flex items-center text px-5 py-2 bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] rounded-md font-medium font-sans transition-transform duration-500 ease-in-out hover:scale-110 "
+          >
+            About Me
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              x="0px"
+              y="0px"
+              width="45"
+              height="44"
+              viewBox="0 0 100 100"
+              className="absolute -right-7 top-0 group-hover:-right-8 ease-in-out duration-150"
+            >
+              <g transform="translate(0,-952.36218)">
+                <path
+                  d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+                  fill="#fff"
+                  stroke="white"
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+          </button>
+
+          <button className="relative group px-5 py-2 bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] rounded-md font-medium transition-transform duration-500 ease-in-out hover:scale-110">
+            Resume
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              x="0px"
+              y="0px"
+              width="45"
+              height="44"
+              viewBox="0 0 100 100"
+              className="absolute -right-7 top-0 group-hover:-right-8 ease-in-out duration-150"
+            >
+              <g transform="translate(0,-952.36218)">
+                <path
+                  d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+                  fill="#fff"
+                  stroke="white"
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+          </button>
         </div>
       </div>
 
-      <ul className="text-white absolute right-8 space-y-8">
+
+      </div>
+
+      
+
+      <ul className="text-gray-300 absolute right-8 space-y-8">
         {/*top-1/2 transform -translate-y-1/2*/}
         <li>
           <a href="" target="_blank">
             <svg
-              className="w-7 hover:text-gray-300"
+              className="w-7 hover:text-white"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >
@@ -139,7 +247,7 @@ const LandingPage = () => {
         <li>
           <a href="mailto:rohans1021@gmail.com" target="_blank">
             <svg
-              className="w-7 hover:text-gray-300"
+              className="w-7 hover:text-white"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -151,9 +259,9 @@ const LandingPage = () => {
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://github.com/programcode200">
             <svg
-              className="w-7 hover:text-gray-300"
+              className="w-7 hover:text-white"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
             >
@@ -167,7 +275,7 @@ const LandingPage = () => {
         <li>
           <a href="#" target="_blank">
             <svg
-              className="w-7 hover:text-gray-300"
+              className="w-7 hover:text-white"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >

@@ -2,25 +2,110 @@ import Card from "./Card";
 import Contact from "./Contact";
 
 const ProjContainer = () => {
-
-
   const cardsData = [
     {
-      title: "React Basics",
-      description: "Learn the basics of React.js including components and hooks.",
-      languages: ["JavaScript", "React"],
-      image: "/assets/netflix.png",
+      title: "Sream-X",
+      description:
+        "A YouTube-like platform for streaming and uploading videos. Users can like, comment, and engage with content. It also includes personalized recommendations for a better experience.",
+      languages: [
+        "Javascript",
+        "React.js",
+        "Express.js",
+        "MongoDB",
+        "Node.js",
+        "Mongoose",
+        "TailwindCSS",
+        "Redux",
+        "Cloudinary",
+        "Postman",
+      ],
+      image: "/assets/youtube.png",
+      url: "https://frontend-youtube-kappa.vercel.app/",
+      textcolor: "#A855F7",
     },
     {
-      title: "Advanced Node.js",
-      description: "Deep dive into Node.js, Express, and database integrations.",
-      tags: ["Backend", "API"],
-      languages: ["Node.js", "Express", "MongoDB"],
-      image: "/assets/macbook 8.png",
+      title: "Netflix-GPT",
+      description:
+        "NetflixGPT is a movie and series platform with a Netflix-like UI. It uses OpenAI to recommend content based on user preferences. Users receive personalized suggestions for their favorite genres.",
+      languages: [
+        "JavaScript",
+        "React.js",
+        "Tailwind",
+        "Firebase",
+        "OpenAI Api's",
+        "Redux",
+      ],
+      image: "/assets/netgpt.png",
+      url:"https://movie-recommendation-vert.vercel.app/browse",
+      textcolor: "#f01e2c",
+    },
+    {
+      title: "Todo",
+      description:
+        "A simple to-do app where users can add, delete, mark, and edit tasks. It helps manage daily tasks efficiently with an easy-to-use interface.",
+      languages: [
+        "javascript",
+        "react.js",
+        "contextApi",
+        "tailwind",
+        "local storage",
+      ],
+      image: "/assets/todo.png",
+      url:"https://react-practices-blond.vercel.app/",
+      textcolor: "#196896",
+    },
+    {
+      title: "Currency Converter",
+      description:
+        "I made this app when I started learning React. This app use an external API to fetch live currency rates. An appealing currency converter with a beautiful UI.",
+      languages: ["javascript", "react.js", "redux", "tailwind", "axios Api's"],
+      image: "/assets/currency.png",
+      url:"https://react-practices-o83z.vercel.app/",
+      textcolor: "#BCCEDD",
+    },
+    {
+      title: "Food system",
+      description:
+        "Practiced using Swiggy's real-time API to understand API integration. Focused on fetching and handling data without building a full project.",
+      languages: [
+        "javascript",
+        "react.js",
+        "redux",
+        "tailwind",
+        "swiggy Api's",
+      ],
+      image: "/assets/food.png",
+      url:"https://react-food-apis.vercel.app/",
+      textcolor: "#BCCEDD",
+    },
+    {
+      title: "Weather",
+      description:
+        "A simple weather site built for practicing JavaScript. It fetches real-time weather data and displays temperature, conditions, and location details.",
+      languages: ["html", "javascript", "css", "wether api's"],
+      image: "/assets/weather.png",
+      url:"https://programcode200.github.io/javascript_exercise/",
+      textcolor: "#3CA795",
+    },
+    {
+      title: "Rock-Paper-Scissors",
+      description:
+        "A simple Rock-Paper-Scissors game built using JavaScript for practice. It allows users to play against the computer with randomized choices and win/loss results.",
+      languages: ["html", "javascript", "css"],
+      image: "/assets/rockpaper.png",
+      url:"https://programcode200.github.io/javascript_project/game/",
+      textcolor: "#7FACFF",
+    },
+    {
+      title: "Number Guessing Game",
+      description:
+        "A simple Number Guessing game built using JavaScript for practice. Players guess a randomly generated number, receiving hints until they find the correct answer.",
+      languages: ["html", "javascript", "css"],
+      image: "/assets/Numberguessing.png",
+      url:"https://programcode200.github.io/javascript_project/project2/",
+      textcolor: "#BCCEDD",
     },
   ];
-  
-
 
   return (
     <div className="border-t  border-[#2a88a8]">
@@ -41,6 +126,8 @@ const ProjContainer = () => {
           description={card.description}
           languages={card.languages}
           image={card.image}
+          url={card.url}
+          textcolor={card.textcolor}
         />
       ))}
 
@@ -51,16 +138,16 @@ const ProjContainer = () => {
           style={{ fontFamily: "Nunito Sans" }}
           className="text-sm text-gray-300"
         >
-          Rohan Sawant © 2025
+          Copyright ©2025 - Rohan Sawant
         </h1>
         <img className="w-12" src="/assets/logo.png" alt="" />
 
-        <ul className="flex text-white space-x-8">
+        <ul className="flex text-gray-300 space-x-8">
           {/*top-1/2 transform -translate-y-1/2*/}
           <li>
             <a href="" target="_blank">
               <svg
-                className="w-5 hover:text-gray-300"
+                className="w-5 hover:text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -74,7 +161,7 @@ const ProjContainer = () => {
           <li>
             <a href="mailto:rohans1021@gmail.com" target="_blank">
               <svg
-                className="w-5 hover:text-gray-300"
+                className="w-5 hover:text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -88,7 +175,7 @@ const ProjContainer = () => {
           <li>
             <a href="">
               <svg
-                className="w-5 hover:text-gray-300"
+                className="w-5 hover:text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 496 512"
               >
@@ -102,7 +189,7 @@ const ProjContainer = () => {
           <li>
             <a href="#" target="_blank">
               <svg
-                className="w-5 hover:text-gray-300"
+                className="w-5 hover:text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >

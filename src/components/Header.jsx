@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const Header = () => {
   const [theme, setTheme] = useState(true);
-  const [currentColor, setCurrentColor] = useState("#e1ea1a");
+  const [currentColor, setCurrentColor] = useState("#008000");
 
   const colors = ["#1596B6", "#e15b28", "#e128d9", "#13d03b", "#eb2c2c"];
 
@@ -15,7 +15,7 @@ const Header = () => {
     }, 1000); // Change color every 1 second
 
     return () => clearInterval(interval);
-  }, []);
+  });
 
   const handleTheme = () => {
     setTheme((prev) => !prev);
